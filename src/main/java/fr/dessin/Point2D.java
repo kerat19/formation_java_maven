@@ -7,6 +7,8 @@ package fr.dessin;
 public class Point2D {
 
 	int x,y;
+	static int compteur;
+
 	public Point2D() {
 		final int x = 0;
 		final int y = 0;
@@ -15,6 +17,7 @@ public class Point2D {
 	public Point2D(int vX, int vY) {
 		this.x = vX;
 		this.y = vY;
+		this.compteur++ ;
 	}
 
 	/**
@@ -54,4 +57,11 @@ public class Point2D {
 		this.y = y;
 	}
 
+	public static int getCompteur() {
+		return compteur;
+	}
+
+	public static void setCompteur(int compteur) {
+		Point2D.compteur = compteur;
+	}
 }

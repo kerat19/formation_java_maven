@@ -22,6 +22,7 @@ public class Run {
 		point.translater(x,y);
 
 
+
 		System.out.println("==================== Exo 2 =======================");
 
 		final Point2D point2 = new Point2D(x,y);
@@ -30,6 +31,12 @@ public class Run {
 		//		point.setY(8);
 		point2.afficher();
 		point2.translater(x,y);
+
+		System.out.println("==================== Exo 4 =======================");
+
+		System.out.println(	"Compteur : " + Point2D.getCompteur());
+
+
 
 	}
 
