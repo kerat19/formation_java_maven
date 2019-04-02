@@ -37,6 +37,25 @@ public class Run {
 		System.out.println(	"Compteur : " + Point2D.getCompteur());
 
 
+		System.out.println("==================== Exo 5 =======================");
+
+		final int z = 2;
+		final Point3D point3 = new Point3D(x,y,z);
+
+		point3.setX(10);
+		point3.setY(5);
+		point3.afficher();
+		point3.translater(x,y);
+		point3.translater(x,y,z);
+
+		System.out.println("==================== Exo 5 Bis =======================");
+
+		final Point3DBis point4 = new Point3DBis(x,y,z);
+
+		point4.point.setX(18);
+		point4.point.setY(6);
+		point4.afficher();
+		point4.translater(x,y,z);
 
 	}
 
