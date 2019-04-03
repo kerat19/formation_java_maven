@@ -20,8 +20,16 @@ public class Run {
 		client.ajouterCompte(compte2);
 		client.ajouterCompte(compte3);
 
+
+
 		System.out.println("le client :" + client.getNom() + " "+client.getPrenom()+ " " + client.getAge());
 		System.out.println("le solde du Compte :" + client.getCompte(1).getSolde());
+
+		client.getCompte(1).ajouter(10);
+		client.getCompte(2).retirer(10);
+
+		System.out.println("le solde du Compte après ajout:" + client.getCompte(1).getSolde());
+		System.out.println("le solde du Compte apès retirer:" + client.getCompte(2).getSolde());
 
 	}
 
